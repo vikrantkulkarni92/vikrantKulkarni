@@ -1,0 +1,41 @@
+<!Doctype HTML>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>docs</title>
+  <meta name="viewport" content="width-device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div id="overlay">
+    <form onsubmit="event.preventDefault(); validateForm()" action="send.php"  method="post">
+      <p>Contact Us</p>
+
+      <label for="name">Name:</label>
+      <input type="text" id="name" placeholder="Enter your Full Name">
+      <small class="error"></small>
+
+      <label for="email">Email:</label>
+      <input type="text" id="email" placeholder="Enter your Full Email">
+      <small class="error"></small>
+
+      <label for="details">DETAILS:</label>
+      <input type="text" id="details" placeholder="Enter your Project Details">
+      <small class="error"></small>
+
+      <div class="center">
+        <input type="submit" value="SEND MESSAGE">
+        <p id="success"></p>
+      </div>
+      <div class="icons">
+                        <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                        <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+                        <a href="#"><ion-icon name="logo-youtube"></ion-icon></a>
+                    </div>
+   </form>
+</div>
+  <script type="text/javascript" src="script.js"></script>
+  <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+</body>
+</html>
